@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: #66ff33;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #fffa65;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: left;
+}
+
+header {
+  margin-bottom: -50px;
+}
+
+.side-pane {
+  display: inline-block;
+  top: 10px;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+h1 {
+  color: #ff6b6b;
+}
+
+
+.point-box {
+  margin-top: 80px;
+  margin-left: 25px;
+  background-color: #009432;
+  padding: 10px;
+}
+
+.life-box {
+  margin-top: 80px;
+  margin-left: 25px;
+  background-color: #009432;
+  padding: 10px;
+}
+
+
+
+/*=========== Open a modal button ===========*/
+#open-modal {
+  top: 15px;
+  left: 0;
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  background-color: #BB33FF;
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  text-decoration: none;
+  line-height: 48px;
+  font-size: 1.6em;
+}
+
+#open-modal:hover {
+  background-color: #2980b9;
+}
+
+/*=========== MODAL ===========*/
+#modal,
+#gameover,
+#accomplished {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  pointer-events: none;
+}
+
+#modal:target,
+#gameover:target,
+#accomplished:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.inner-modal {
+  width: 480px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.close {
+  top: -10px;
+  right: -12px;
+  position: absolute;
+  line-height: 25px;
+  background-color: #2ecc71;
+  color: #fff;
+  text-align: center;
+  width: 24px;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background-color: #16a085;
+}

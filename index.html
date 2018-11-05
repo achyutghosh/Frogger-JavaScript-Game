@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FROGGER</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Minimum header -->
+  <header>
+    <h1 id="main-title">Classic Arcade Game : Frogger</h1>
+  </header>
+
+  <!-- Left side pane -->
+  <div class="side-pane">
+    <a id="open-modal" href="#modal">
+      HOW TO
+    </a>
+    <br><br>
+    <div class="point-box">
+      <h3>Score</h3>
+      <h1 id="points"></h1>
+    </div>
+    <div class="life-box">
+      <h3>Life<br/>Remaning</h3>
+      <h1 id="lifes"></h1>
+    </div>
+  </div>
+
+  <!-- HOW TO PLAY pop up message -->
+  <div id="modal">
+    <div class="inner-modal">
+      <a href="#" class="close">X</a>
+      <h1>Welcome!</h1>
+      <p>
+        A character is positioned at bottom of of the canvas. <br/>
+        Use arrow keys of your computer (UP, DOWN, LEFT, RIGHT) to move the character.
+        <br/>
+        <br/>
+        Move the character to get a Gem (worth 1 point) and/or a Star (worth 2 points) to gain points. You will win if you gain 25 points.
+        <br/>
+        <br/>
+        If you get hit by running bugs on street, you will lose 1 point. If your life become 0, game over! You have 3 life at the beginning.
+        <br/>
+        <br/>
+        Have fun!
+      </p>
+    </div>
+  </div>
+
+  <!-- Pop up message on losing a game -->
+  <div id="gameover">
+    <div class="inner-modal">
+      <a href="#" class="close">X</a>
+      <h1>GAME OVER!</h1>
+      <p>
+        Oh no ...! You ran out lifes. But, don't worry. You can play as many as you want!
+      </p>
+    </div>
+  </div>
+
+  <!-- Pop up message on gaining 10 points -->
+  <div id="accomplished">
+    <div class="inner-modal">
+      <a href="#" class="close">X</a>
+      <h1>Congratulation!</h1>
+      <p>
+        You are so great! You gained 25 points!! Thank you for playing. You can play again if you want!! :)
+      </p>
+    </div>
+  </div>
+
+  <!-- Javascript files -->
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+</html>
